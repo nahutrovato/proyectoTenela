@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenela</title>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/funciones.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="./js/funciones.js"></script>
 </head>
 <body>
     <div>
@@ -28,7 +27,7 @@
                   <a class="nav-link" href="#quienes-somos">¿Quiénes somos?</a>
                 </li>
                 <li class="nav-item" style="background-color: rgb(109,209,175);">
-                  <a class="nav-link" href="/login.html">Soy Cliente</a>
+                  <a class="nav-link" href="https://www.google.com.ar/">Soy Cliente</a>
                 </li>
                 <div class="col-1"></div>
             </ul>
@@ -39,7 +38,7 @@
 
         <div class="cuadro row col-12">
             <div class="col-2"></div>
-            <div class="cuadrito shadow-card col-8 px-4 py-5 my-5 text-center">
+            <div class="cuadrito col-8 px-4 py-5 my-5 text-center">
 
                 <div class="row">
                     <div class="flower-tenela-container me-auto col-5">
@@ -48,13 +47,13 @@
                         <div class="flower-tenela-carrusel carousel" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                <p class="texto-carrusel neon-text d-block w-100" alt="...">Pagá los servicios</p>
+                                <p class="texto-carrusel d-block w-100" alt="...">Pagá los servicios</p>
                                 </div>
                                 <div class="carousel-item">
-                                <p class="texto-carrusel neon-text">Festejá tu cumpleaños o aniversario</p>
+                                <p class="texto-carrusel ">Festejá tu cumpleaños o aniversario</p>
                                 </div>
                                 <div class="carousel-item">
-                                <p class="texto-carrusel neon-text">Arrancá tu emprendmiento</p>
+                                <p class="texto-carrusel ">Arrancá tu emprendmiento</p>
                                 </div>
                             </div>
                         </div>
@@ -66,60 +65,34 @@
                         <div id=columnaDerechaCardEvaluarCredito>
                 
                             <div>
-                                <span class="badge bg-secondary" id="mostradorMonto" style="width: -webkit-fill-available; font-size: larger; background-color:rgba(170,170,170,0.6) !important; border-radius:10px;">MONTO</span>
-                                <span>10000</span>
-                                <input type="range" class="slide-barra" id="customRange1" min="10000" max="100000" value="50000" onChange = "averiguarCredito()">
-                                <span>100000</span>
+                                <span class="badge bg-secondary" style="width: -webkit-fill-available; font-size: larger;">MONTO</span>
+                                <input type="range" class="form-range" id="customRange1">
                             </div>
         
                         
                             <div>
-                                <span class="badge bg-secondary" id="mostradorDias" style="width: -webkit-fill-available; font-size: larger; background-color:rgba(170,170,170,0.6) !important; border-radius:10px;">PLAZO</span>
-                                <span>DIA 10</span>
-                                <input type="range" class="slide-barra" id="customRange2" min="10" max="90" value="50" onChange = "averiguarCredito()" >
-                                <span>DIA 90</span>
+                                <span class="badge bg-secondary" class="spanMonto" style="width: -webkit-fill-available; font-size: larger;">PLAZO</span>
+                                <input type="range" class="form-range" id="customRange2">
                             </div>    
                         
-                            <div style="display: flex; flex-direction: column;">
-                                <h6 style="margin-top: 3%; color: #482146; font-weight: bold;">Monto total a devolver</h6>
-                                <h1 id="montoADevolver" style="color: #482146; font-weight: bold;">$ARS 0</h1>
-                               <div class="divDatosInferior">
-                                    <span class="datosInferiorCalculadora">Préstamo</span>
-                                    <span class="datosInferiorCalculadora" id="visualizadorPrestamo">ARS</span>
-                               </div>
-                               <div class="divDatosInferior">
-                                    <span class="datosInferiorCalculadora">Plazo </span>
-                                    <span class="datosInferiorCalculadora" id="visualizadorDias">24 dias</span>
-                               </div>
-                               <div class="divDatosInferior">
-                                    <span class="datosInferiorCalculadora">Fecha de pago</span>
-                                    <span class="datosInferiorCalculadora">22/11/2021</span>
-                               </div>
-                               <div class="divDatosInferior">
-                                    <span class="datosInferiorCalculadora">Interés incluye IVA</span>
-                                    <span class="datosInferiorCalculadora" id="visualizadorInteres">ARS</span>
-                               </div>
-                               <div class="divDatosInferior">
-                                    <span class="datosInferiorCalculadora">Costos administrativos incluye IVA</span>
-                                    <span class="datosInferiorCalculadora" id="visualizardorCostosAdministrativos">ARS</span>
-                               </div>
-                    
+                            <div>
+                                <h5>Monto total a devolver</h5>
+                                <h1>ARS$120.00</h1>
+                                <div>
+                                    <p>Prestamos</p>
+                                    <p>Plazos</p>
+                                    <p>Fecha de pago</p>
+                                </div>
                             
                         </div>
-     
-
-
-
 
                     </div>
                 </div>
 
                 <div class="row">
-                    <a href="/login.html">
-                        <button class="solicitar-credito neon-text btn btn-primary col-10 mx-auto">
-                            ¡Solicitalo ahora!<span class="espacio-peq" style="font-size: 0.5em;">Click aquí</span>
-                        </button>
-                    </a>
+                    <button type="submit" class="solicitar-credito btn btn-primary col-10 mx-auto">
+                        ¡Solicitalo ahora!<span class="espacio-peq" style="font-size: 0.5em;">Click aquí</span>
+                    </button>
                 </div>
             </div>
             <div class="col-2"></div>
@@ -127,12 +100,12 @@
             <div class="b-example-divider"></div>
         </div>
         
-        <div id="como-funciona" class="cuadro row col-12">
-            <div class="col-2"></div>
-            <div class="cuadrito shadow-card col-8 px-4 py-5 my-5 text-center">
+        <div id="como-funciona">
+            <div class="row cuadrito text-center" class="card" id="cardEvaluadorCredito" style="
+            width: 65%; height: auto; margin-left: 20%">
                 <div class="col-lg-12 text-center mb-3 mt-5 HowToGet-Tittle">
-                            <h1 class="neon-text">¿Cómo pido mi préstamo?</h1>
-                            <h2 class="neon-text">Sólo con DNI y cuenta bancaria</h2>
+                    <h1>¿Cómo pido mi préstamo?</h1>
+                    <h2>Sólo con DNI y cuenta bancaria</h2>
                 </div>
                 <div class="col-lg-12 text-center HowToGetContent">
                     <div class="row justify-content-between resolution-move">
@@ -189,87 +162,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2"></div>
-            <div class="b-example-divider"></div>
         </div>
-
-        
-
-        <div id="como-funciona" class="cuadro row col-12">
-            <div class="col-2"></div>
-            <div class="cuadrito shadow-card col-8 px-4 py-5 my-5 text-center">
-                <div class="col-lg-12 text-center mb-3 mt-5 HowToGet-Tittle">
-                            <h1 class="neon-text">¿Por que tomar un préstamo?</h1>
-                          
-                </div>
-                <div class="col-lg-12 text-center HowToGetContent">
-                    <div class="row justify-content-between resolution-move">
-                        <!-- carta 1 -->
-                        <div class="row w-100">
-                            <div class="col-6 col-md-3 my-3 TypeCards ffloat-left">
-                                <div class="cardsImg my-5">
-                                    <img src="https://www.tenela.com/imgs/icon05.png" alt="">
-                                </div>
-                                <div class="cardsContent">
-                                    <h5>Seguridad</h5>
-                                    <p>Utilizamos las más avanzadas herramientas de encriptación de datos para asegurar tu privacidad.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="col-6 col-md-3 my-3 TypeCards ffloat-right">
-                                <div class="cardsImg my-5">
-                                    <img src="https://www.tenela.com/imgs/icon06.png" alt="">
-                                </div>
-                                <div class="cardsContent">
-                                    <h5>Transparencia</h5>
-                                    <p>Conoce exactamente cuánto vas a pagar.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- carta 2 -->
-                        
-                        <div class="row w-100" style="max-height: 500px;">
-                            
-                            <div class="col-6 col-md-3 my-3 TypeCards ffloat-left bottom">
-                                <div class="cardsImg my-5">
-                                    <img src="https://www.tenela.com/imgs/icon04.png" alt="">
-                                </div>
-                                <div class="cardsContent">
-                                    <h5>Velocidad</h5>
-                                    <p>El proceso de aprobación es 100% online.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="col-6 col-md-3 my-3 TypeCards ffloat-right bottom">
-                                <div class="cardsImg my-5">
-                                    <img src="https://www.tenela.com/imgs/icon03.png" alt="">
-                                </div>
-                                <div class="cardsContent">
-                                    <h5>Confianza</h5>
-                                    <p>Estamos para ayudarte, podrás ver toda la información de tu préstamo dentro de la plataforma.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="solicitar-credito neon-text btn btn-primary col-10 mx-auto">
-                            ¡Solicitalo ahora!<span class="espacio-peq" style="font-size: 0.5em;">Click aquí</span>
-                        </button>        
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-2"></div>
-            <div class="b-example-divider"></div>
-        </div>
-
-
-
 
         <div id="preguntas-frecuentes" class="cuadro row col-12">
             <div class="col-2"></div>
-            <div class="cuadrito shadow-card col-8 px-4 py-5 my-5 text-center">
-
-                <h1 class="display-5 neon-text">Preguntas frecuentes</h1>
+            <div class="cuadrito col-8 px-4 py-5 my-5 text-center">
+                <!-- <img class="flower-tenela d-block mx-auto mb-4" src="/img/flower003.svg"> -->
+    
+                <h1 class="display-5 fw-bold">Preguntas frecuentes</h1>
     
                 <div class="col-lg-6 mx-auto">
                     <div class="lista-faq lead mb-4">
@@ -291,9 +191,10 @@
 
         <div id="quienes-somos" class="cuadro row col-12">
             <div class="col-2"></div>
-            <div class="cuadrito shadow-card col-8 px-4 py-5 my-5 text-center">
+            <div class="cuadrito col-8 px-4 py-5 my-5 text-center">
+                <!-- <img class="flower-tenela d-block mx-auto mb-4" src="/img/flower003.svg"> -->
     
-                <h1 class="display-5 neon-text">¿Quiénes somos?</h1>
+                <h1 class="display-5 fw-bold">¿Quiénes somos?</h1>
     
                 <div class="col-lg-6 mx-auto">
                     <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit neque officiis enim similique. Perferendis nihil similique aperiam consequatur sit tempore nisi? Animi, hic laborum! Veritatis dolor iusto illum nam minima perferendis ad magni, in fuga repudiandae, incidunt maiores recusandae modi officia eos magnam earum vitae molestias id itaque quis.</p>
