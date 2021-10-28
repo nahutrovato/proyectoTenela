@@ -1,6 +1,22 @@
+@font-face {
+    font-family: "Neon";
+    src: url('/fonts/Neon.ttf');
+}
+
 body {
     background-image: url('/img/background.png');
-    font-family: Calibri, 'Trebuchet MS', sans-serif !important;
+    background-repeat: no-repeat;
+    font-family: Calibri !important;
+    font-size: small;
+}
+
+.shadow-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.neon-text {
+    font-family: "Neon" !important;
+    color: #888888;
 }
 
 .espacio-peq {
@@ -41,7 +57,7 @@ body {
 }
 
 .cuadrito {
-    background-color: antiquewhite !important;
+    background-color: white !important;
 }
 
 .lead {
@@ -70,7 +86,7 @@ body {
 }
 
 .calculadora {
-    background-color: antiquewhite;
+    background-color: white;
 }
   
 input[type='range']::-webkit-slider-thumb {
@@ -104,3 +120,43 @@ footer {
     color: aliceblue;
 }
 
+#login {
+    color: rgb(136,136,136);
+}
+
+input[type='text'], input[type='password'] {
+    border-radius: 10px;
+    border-color: rgb(136,136,136);
+    text-align: center;
+}
+
+.login-ingresar {
+    width: 40% !important;
+    border-radius: 15px !important;
+    border-color: rgb(136,136,136) !important;
+    color: black !important;
+    border-width: 0.1em !important;
+    height: 7vh !important;
+}
+.datosInferiorCalculadora{
+    margin: 0;
+    text-align: left;
+}
+.divDatosInferior{
+    display: flex;
+    justify-content: space-between;
+}
+.slide-barra{
+    -webkit-appearance:none;
+    width:70%;
+    height:10px;
+    border-radius:6px;
+    background:#006959;
+    outline:none;
+    opacity:0.7;
+    -webkit-transition:0.2s;
+    transition:opacity 0.2s;
+    background:url('https://www.tenela.com/imgs/circle02.svg');
+    background-size:15px;
+    background-repeat:round;
+}

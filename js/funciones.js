@@ -1,20 +1,42 @@
-const limpiar = () => document.getElementById('miFormulario').reset();
-
-const fetch = () => {
-    let get = document.getElementById("get").value;
-    document.getElementById("put").value = dias;
-}
-
-const percentage = (partialValue, totalValue) => (partialValue * totalValue) /100;
 
 
-const sumar = () => {
-    let monto = parseInt(document.getElementById('monto').value);
-    let dias = parseInt(document.getElementById('dias').value);
-    let intereses =percentage(monto,dias);
-    intereses=+ dias;
-    console.log(`Estoy dentro de la funcion ${monto}`);
+const averiguarCredito = () =>{
+    let mostradorDeMonto = document.querySelector('#mostradorMonto');
+    let mostradorDeDias = document.querySelector('#mostradorDias');
+    let monto = parseInt(document.querySelector('#customRange1').value);
+    let dias = parseInt(document.querySelector('#customRange2').value);
 
-   document.getElementById('el-resultado').innerHTML = intereses;
+    let interesesPorcentaje = dias * 1
+    let interesFinal = (monto*interesesPorcentaje) / 100;
+    
+    let montoADevolver = document.querySelector('#montoADevolver');
+    let visualizadorPrestamo = document.querySelector("#visualizadorPrestamo");
+    let visualizadorDias = document.querySelector('#visualizadorDias');
+    let visualizadorInteres = document.querySelector('#visualizadorInteres');
+    let visualizadorCostosAdministrativos = document.querySelector('#visualizardorCostosAdministrativos');
 
+    
+    let costosAdministrativos = ( interesFinal * 10 ) / 100; 
+    let precio = "$ARS " + (monto + interesFinal + costosAdministrativos);
+    let precioFinal = '';
+
+    for(let i=0;i<precio.length;i++){
+        
+        if(precio[i]==='.'){
+            break;
+        }else{
+            precioFinal+=precio[i]
+        }
+        
+    }
+
+    
+
+    mostradorDeDias.innerHTML = "Dias: " + dias;
+    mostradorDeMonto.innerHTML = "Monto: " + monto;
+    montoADevolver.innerHTML = precioFinal;
+    visualizadorPrestamo.innerHTML = precioFinal;
+    visualizadorDias.innerHTML = dias + " dias";
+    visualizadorInteres.innerHTML = interesFinal;
+    visualizadorCostosAdministrativos.innerHTML = costosAdministrativos;
 }
