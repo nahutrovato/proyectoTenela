@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <div class="nav-tenela row">
+            <ul class="nav justify-content-center">
+                <div class="col-1"></div>
+                <div class="logo-tenela-container col-2">  
+                    <a href="/index.html">
+                        <img src="img/Logotype_tenela.svg" class="logo-tenela">
+                    </a>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link active" style="color: rgb(246,134,97) !important">¿Cómo funciona?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: rgb(246,134,97) !important">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: rgb(246,134,97) !important">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: rgb(246,134,97) !important">Soy Cliente</a>
+                </li>
+                <div class="col-1"></div>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="login" class="cuadro row col-12">
+            <div class="col-2"></div>
+            <div class="cuadrito shadow-card neon-text col-8 px-4 py-5 my-5 text-center">
+                <h1 class="display-5">Mi cuenta</h1>
+                <div class="espacio-peq"></div>
+                <h2 style="font-size: larger;">Ingresá a tu cuenta</h2>
+                <p>Te damos respuesta en el día.</p>
+                <br>
+                <form action="login">
+                    <div class="login-campos">
+                        <input type="text" name="" id="dni" placeholder="Ingresá tu DNI">
+                        <br>
+                        <br>
+                        <input type="password" name="" id="password" placeholder="Ingresá tu contraseña">
+                    </div>
+                    <div class="espacio-peq"></div>
+                    <a href="/index.html" style="text-decoration: none;">
+                        <p style="color: rgb(109,209,175); font-size: small; font-weight: bold;">Olvidé mi contraseña</p>
+                    </a>
+                    <div class="espacio-peq"></div>
+                    <button class="btn solicitar-credito login-ingresar" onclick="alert('LOGIN');">
+                        <p style="font-size: large">INGRESAR</p>
+                    </button>
+                </form>
+            </div>
+            <div class="col-2"></div>
+            <div class="b-example-divider"></div>
+        </div>
+
+        <br><br>
+    </div>
+
+    <footer style="height: 40vh;">
+        <div class="texto-footer-info">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <br><br>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi neque quo veritatis inventore, accusantium, sed minima provident maxime nostrum, vitae tempore fuga. Magni quos, reprehenderit vel laborum harum odit beatae dolorem asperiores! Aliquam sit omnis, eligendi cupiditate dicta dolorum aspernatur beatae, iusto culpa sed commodi.</p>
+                    
+                    <br>
+                    <h5>Copyright 2021</h5>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
